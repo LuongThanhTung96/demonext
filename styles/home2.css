@@ -1,0 +1,222 @@
+:root {
+    --header-background : rgb(215,0,24);
+    --header-btn : rgb(223,51,70);
+}
+.header {
+    width: 100%;
+    min-height: 60px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+    display: flex;
+    position: fixed;
+    top: 0px;
+    background-color: var(--header-background);
+    z-index: 100;
+}
+.header_container {
+    height: 40px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header_left {
+    flex-basis: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header_left_logo {
+    flex-basis: 40%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Andale Mono, monospace;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.headleft_icon_btn {
+    flex-basis: 25px;
+    height: 25px;
+    overflow: hidden;
+}
+img.icon_header {
+    height: 100%;
+    width: 100%;
+}
+span.headleft_text_title {
+    display: block;
+    font-size: 12px;
+}
+span.headleft_text_option {
+    display: block;
+    font-size: 12px;
+    position: relative;
+}
+span.headleft_text_option::after {
+    content: '';
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    transform: rotate(-45deg);
+    height: 3px;
+    width: 3px;
+}
+.header_left_btn {
+    flex-basis: 26%;
+    border-radius: 8px;
+    background-color: var(--header-btn);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.headleft_content {
+    width: 70px;
+    min-height: 15px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.header_center {flex-basis: 225px}
+.header_right {
+    flex-basis: 450px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_right_btn {
+    flex-basis: 18%;
+    height: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_right_btn:nth-child(1) {flex-basis: 22%}
+.righthead_content p {
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.homePage {width: 100%}
+.homePage_container {
+    width: 1200px;
+    min-height: 150px;
+    margin: auto;
+}
+.icon_righthead {
+    flex-basis: 25px;
+    height: 25px;
+}
+.righthead_content {
+    min-height: 25px;
+    flex-basis: calc(100% - 25px);
+    overflow: hidden;
+    line-height: 12px;
+}
+span.headright_text_title {
+    font-size: 11px;
+    color: #ffffff;
+    display: block;
+    font-weight: 500;
+}
+span.headright_text_option {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+input.input_search_header {
+    border: 0px;
+    padding: 10px 8px 10px 45px;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 2px;
+}
+.iconsearch {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding: 8px;
+    margin-top: 1px;
+    overflow: hidden;
+}
+
+
+.homepage_body {
+    width: 100%;
+    padding-top: 60px;
+    min-height: 80px;
+    border: 1px solid;
+}
+.filterhome {
+    width: 100%;
+    display: block;
+    min-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.filterhome_container {
+    width: 1200px;
+    margin: auto;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.filterhome_left {
+    flex-basis: 20%;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+.filterhome_center {
+    flex-basis: 50%;
+    /* border: 1px solid; */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.filterhome_right {
+    flex-basis: 25%;
+    border: 1px solid;
+}
+.select_home {
+    padding: 0px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.select_home_icon {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    overflow: hidden;
+    margin-right: 5px;
+}
+.select_home_text {
+    display: inline-block;
+    position: absolute;
+    font-size: 12px;
+    line-height: 25px;
+    color: #343a40;
+    font-weight: 700;
+}
+.select_home_iconafter {
+    display: inline-block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.select_home:hover {
+    background-color: #f3f4f6;
+}
+.slider_container {
+    height: 80%;
+    overflow: hidden;
+    border: 1px solid;
+    position: relative;
+}
